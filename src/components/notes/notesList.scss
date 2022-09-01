@@ -1,0 +1,45 @@
+@import '../../assets/scss/vairablies';
+.notes {
+  width: 15%;
+  .notesDetails {
+    display: block;
+    background-color: rgb(34, 31, 33);
+    padding: 10px;
+    border-radius: 10px;
+    min-height: 80px;
+    margin-top: 10px;
+    color: aliceblue;
+    p{
+      font-size: xx-small;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+    
+    }
+  }
+  .mainInfo {
+    text-align: center;
+    font-size: small;
+  }
+  a {
+    color: aliceblue;
+    &:hover {
+      color: aliceblue;
+    }
+  }
+}
+
+
+@media (max-width: $breakpoint-tablet) {
+  .notes {
+
+    width: 21%;
+  }
+}
+@media (max-width: $breakpoint-mobile) {
+  .notes {
+    width: 30%;
+  }
+}

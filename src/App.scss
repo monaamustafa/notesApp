@@ -1,0 +1,89 @@
+@import "./assets/scss/vairablies";
+.app {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(26, 27, 29);
+}
+.pagesBody {
+  padding-top: 50px;
+  width: 65%;
+  box-shadow: 3px 6px 6px rgba(85, 79, 79, 0.699);
+  position: relative;
+
+  margin: auto;
+}
+.content {
+  min-height: 400px;
+  background-color: rgb(105, 105, 105);
+}
+a {
+  text-decoration: none !important;
+  color: black;
+}
+.notesPage {
+  position: relative;
+  a {
+    color: black;
+    &:hover {
+      color: black;
+    }
+  }
+  .noteList {
+    scrollbar-width: none; /* Firefox */
+  }
+  
+}
+.plus-icon {
+  font-size: 20px;
+  position: absolute;
+  bottom: 10px;
+  right: 16px;
+  color: aliceblue;
+  background-color: palevioletred;
+  border: none;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+  a {
+    color: aliceblue;
+  }
+}
+.innerHeading {
+  @include headersStyle();
+  font-size: 36px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  a {
+    @include headersStyle();
+  }
+}
+
+.testArea {
+  textarea {
+    background-color: transparent !important;
+    background-image: none !important ;
+    border-image: none !important;
+    border-color: transparent !important;
+    outline: none !important;
+    resize: none;
+    width: 100%;
+    height: 300px;
+  }
+  // font-size: 40px;
+}
+
+@media (max-width: $breakpoint-tablet) {
+  .pagesBody {
+    width: 80%;
+  }
+}
+@media (max-width: $breakpoint-mobile) {
+  .pagesBody {
+    width: 100%;
+  }
+}

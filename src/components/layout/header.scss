@@ -1,0 +1,11 @@
+@import "../../assets/scss/vairablies";
+.header {
+  padding: 5px;
+  background-color: rgb(41, 40, 40);
+  color: aliceblue;
+  h1 {
+    font-size: 50px;
+    //  @include headersStyle();
+    font-family: $headersFont;
+  }
+}
